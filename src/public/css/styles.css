@@ -1,0 +1,27 @@
+body {
+    background-color: #EAC926;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.precio {
+    font-size: 18px;
+}
+
+.des {
+    font-size: 16px;
+}
+
+.alineacion {
+    text-align: center;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+}
