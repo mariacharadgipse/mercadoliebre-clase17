@@ -1,5 +1,14 @@
-body {
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.body {
     background-color: #EAC926;
+    margin: 0 auto;
+    max-width: 1920px;
 }
 
 h3 {
@@ -8,6 +17,7 @@ h3 {
 
 h4 {
     font-size: 16px;
+    margin-bottom: 10px;
 }
 
 .precio {
@@ -22,6 +32,134 @@ h4 {
     text-align: center;
 }
 
+.alineacionmain {
+    text-align: center;
+    font-size: 24x;
+}
+
+
+.caja {
+    width: 90%;
+    /* Ancho de la caja */
+    max-width: 1600px;
+    /* Ajusta el ancho máximo */
+    margin: 10px auto;
+    /* Centra horizontalmente */
+    /* Margen externo de 10 píxeles */
+    padding: 20px;
+    /* Espaciado interno de 20 píxeles */
+    background-color: #ebebeb;
+    /* Color de fondo gris claro */
+    border-top: 1px solid #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /*position: relative;*/
+}
+
+
+.sombra {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /*background-color: var(--bg-secundario);*/
+    margin: 10px 0;
+    /*border-radius: 10px;*/
+}
+
 p {
     font-family: 'Roboto', sans-serif;
 }
+
+.burguer-contenedor {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* Centra en el eje horizontal */
+    align-items: center;
+    /* Centra en el eje vertical */
+}
+
+.burger-menu {
+    background-color: blue;
+    /* Fondo azul del cuadrado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    /* Ajusta el ancho del cuadrado  */
+    height: 50px;
+    /* Ajusta la altura del cuadrado  */
+    border-radius: 8px;
+}
+
+.burger-menu i {
+    color: white;
+    /* Color blanco de las líneas del ícono */
+    font-size: 24px;
+    /* Ajusta el tamaño del ícono  */
+    text-align: center;
+}
+
+
+.iconfooter {
+    color: #1259c3;
+    font-size: 2em;
+}
+
+.ml__img {
+    width: 70;
+    margin-bottom: 10px;
+
+}
+
+
+.icontruck {
+    border-radius: 50%;
+    border: 1px solid #39b54a;
+    padding: 20px;
+    color: #39b54a;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Media queries */
+@media (max-width: 440px) {
+    h4 {
+        display: none;
+    }
+}
+
+/* Media queries */
+@media (max-width: 440px) {
+    .nav-bar {
+        display: none;
+    }
+}
+
+/* Media queries */
+@media (min-width: 440px) {
+    .burguer-contenedor {
+        display: none;
+    }
+
+    .burger-menu {
+        display: none;
+    }
+
+    .caja {
+        display: flex;
+        flex-direction: row; /* Cambia la dirección del flex container a columna */
+        /*justify-content: flex-star;*/
+      }
+  }
+
