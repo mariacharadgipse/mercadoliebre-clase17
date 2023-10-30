@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+.encabezado{
+    display: flex;
+}
+
+.logo-mercado-liebre{
+    width: 50%;
+}
 
 .body {
     background-color: #EAC926;
@@ -13,6 +20,8 @@
 
 h3 {
     font-size: 24px;
+    display: block;
+    width: 100%;
 }
 
 h4 {
@@ -26,22 +35,50 @@ h4 {
 
 .des {
     font-size: 16px;
+    color: #39b54a;
+    margin-top: 5px;
+    margin-left: 30px;
 }
 
 .alineacion {
     text-align: center;
 }
 
-.alineacionmain {
-    text-align: center;
-    font-size: 24x;
+.info-productos {
+    position: relative;
+    width: 100%;
+}
+
+.conteiner-Price-AND-Desc {
+    display: flex;
+}
+
+.icontruck {
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+.img__banner {
+    width: 90;
+    height: auto;
 }
 
 
 .caja {
-    width: 90%;
+    width: 100%;
     /* Ancho de la caja */
-    max-width: 1600px;
+    max-width: 1900px;
     /* Ajusta el ancho máximo */
     margin: 10px auto;
     /* Centra horizontalmente */
@@ -61,6 +98,14 @@ h4 {
 .sombra {
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
+
+.img__tamaño {
+    height: 300px;
+    /* ajusta la altura */
+    width: 300px;
+    /* ajusta el ancho */
+}
+
 
 
 .articulo {
@@ -119,18 +164,6 @@ p {
 }
 
 
-.icontruck {
-    border-radius: 50%;
-    border: 1px solid #39b54a;
-    padding: 20px;
-    color: #39b54a;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-
-
-
 
 /* Media queries */
 @media (max-width: 440px) {
@@ -143,6 +176,17 @@ p {
 @media (max-width: 440px) {
     .nav-bar {
         display: none;
+    }
+    .img__banner{
+        display: flex;
+        height: 100px;
+        width: 350px; 
+        justify-content: center;
+    }
+    .encabezado{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;      
     }
 }
 
@@ -158,8 +202,10 @@ p {
 
     .caja {
         display: flex;
-        flex-direction: row; /* Cambia la dirección del flex container a columna */
+        flex-direction: row;
+        /* Cambia la dirección del flex container a columna */
         /*justify-content: flex-star;*/
-      }
-  }
+    }
 
+
+}
