@@ -9,6 +9,16 @@ app.get('/',(req, res)=>{
     //res.send('funciona')
 });
 
+app.get('/register',(req, res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'register.html'))
+  //res.send('funciona')
+});
+
+app.get('/login',(req, res)=>{
+  res.sendFile(path.join(__dirname, 'views', 'login.html'))
+  //res.send('funciona')
+});
+
 
 app.get('*', (req, res)=>{
     res.send(`
