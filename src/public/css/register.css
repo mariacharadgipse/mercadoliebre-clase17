@@ -6,6 +6,69 @@
     --bg-secundario: #101010;
 }
 
+h5{
+    padding: 10px;
+    font: 1em sans-serif;
+}
+
+.header {
+    background-color: #EAC926;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.logo-mercado-liebre {
+    width: 20%;
+    padding: 10px;
+}
+
+
+.barra_busqueda {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Establece la posición relativa para que la posición absoluta funcione dentro de ella */
+}
+
+
+/* Estilos para el campo de búsqueda */
+.campo_busqueda {
+    padding: 10px 50px 10px 10px;
+    /* Ajusta el relleno para hacer la barra de búsqueda más grande y dejar espacio para la lupa */
+    font-size: 16px;
+    /* Ajusta el tamaño de la fuente para hacer la barra de búsqueda más grande */
+    border: 2px solid #ccc;
+    /* Añade un borde a la barra de búsqueda */
+    border-radius: 5px;
+    /* Añade esquinas redondeadas */
+    flex: 1;
+    /* Hace que el campo de búsqueda ocupe el espacio disponible */
+}
+
+
+
+/* Estilos para la lupa (imagen) */
+.lupa {
+    position: absolute;
+    /* Posición absoluta en relación con la barra de búsqueda */
+    right: 10px;
+    /* Ajusta la posición de la lupa a la derecha del campo de búsqueda */
+    /*cursor: pointer;*/
+}
+
+
+.alinea {
+    padding: 10px 50px 10px 10px;
+    margin-top: 10px;
+}
+
+
 .nav_bar {
     display: flex;
 }
@@ -23,74 +86,35 @@ li {
     padding: 10px;
 }
 
-.barra_busqueda {
-    display: flex;
-    align-items: center;
-    position: relative;
-    /* Establece la posición relativa para que la posición absoluta funcione dentro de ella */
-}
 
-/* Estilos para el campo de búsqueda */
-.campo_busqueda {
-    padding: 10px 50px 10px 10px;
-    /* Ajusta el relleno para hacer la barra de búsqueda más grande y dejar espacio para la lupa */
-    font-size: 16px;
-    /* Ajusta el tamaño de la fuente para hacer la barra de búsqueda más grande */
-    border: 2px solid #ccc;
-    /* Añade un borde a la barra de búsqueda */
-    border-radius: 5px;
-    /* Añade esquinas redondeadas */
-    flex: 1;
-    /* Hace que el campo de búsqueda ocupe el espacio disponible */
-}
-
-/* Estilos para la lupa (imagen) */
-.lupa {
-    position: absolute;
-    /* Posición absoluta en relación con la barra de búsqueda */
-    right: 10px;
-    /* Ajusta la posición de la lupa a la derecha del campo de búsqueda */
-    cursor: pointer;
-}
 
 
 .img__banner {
     display: none;
 }
 
-.logo-mercado-liebre {
-    width: 20%;
-    padding: 10px;
-}
 
-.encabezado {
-    display: flex;
-    justify-content: space-around;
-}
 
-.alinea{
-    padding: 10px 50px 10px 10px;
-    margin-top: 10px;
-}
 
 .alineacion {
     text-align: center;
 }
 
 
-.login-container {
+.register-container {
     background-color: var(--links);
-    padding: 5px;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     height: 100%;
     text-align: left;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
 
-input {
+input[type="text"] {
     width: 100%;
     margin: 10px;
     padding: 10px;
@@ -99,6 +123,48 @@ input {
     display: flex;
     justify-content: center;
 }
+
+
+
+input[type="email"] {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+input[type="date"] {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border-style: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+input[type="radio"] {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+
+input[type="checkbox"] {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
 
 button {
     display: flex;
@@ -109,3 +175,18 @@ button {
     color: white;
     background-color: blue;
 }
+
+label {
+    margin-right: 10px;
+    /* Espacio entre labels y radio buttons */
+    position: relative;
+    /* Establece una posición relativa para posicionar la etiqueta detrás del radio button */
+
+}
+
+.contenedor-radio {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+

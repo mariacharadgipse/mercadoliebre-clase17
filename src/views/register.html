@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="body">
+    <header class="header">
         <div class="encabezado">
             <img class="logo-mercado-liebre" src="/images/logo-mercado-liebre.svg" alt="Logo de Mercado Liebre">
             <div class="barra_busqueda">
@@ -29,7 +29,7 @@
                 </div>
             </div>
 
-            <div class="cuotas">
+            <div>
                 <p class="alinea">
                     <i class="fas fa-hand-holding-usd"> </i>
                     Comprá en cuotas y sin tarjeta de crédito
@@ -53,42 +53,51 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
-
     </header>
+
     <section class="img__banner">
         <img src="/images/img-home-banner.jpg" alt="Banner de Ofertas">
     </section>
+
     <main>
-
-        <div class="login-container">
-
-            <form action="/login" method="POST">
+        <div class="register-container">
+            <form action="/register" method="POST">
                 <input type="text" name="Nombre" placeholder="Nombre y Apellido">
                 <input type="text" name="usuario" placeholder="Nombre de usuario">
                 <input type="email" name="email" placeholder="E-mail">
-                <label>Fecha de Nacimiento</label>
-                <input type="date" name="fechanacimiento">
+                <h5>Fecha de Nacimiento</h5>
+                <input type="date" id="fechanac" name="fechanacimiento">
                 <input type="text" name="domicilio" placeholder="domicilio">
-                <label>Comprador</label>
-                <input type="radio" name="perfil-de-usuario" value="Comprador">
-                <label>Vendedor</label>
-                <input type="radio" name="perfil-de-usuario" value="Vendedor">
-                <label>Electro</label>
-                <input type="checkbox" name="hobbies" value="Electro">
-                <label>Moda</label>
-                <input type="checkbox" name="hobbies" value="Moda">
-                <label>Hogar</label>
-                <input type="checkbox" name="hobbies" value="Hogar">
-                <label>Jugueteria</label>
-                <input type="checkbox" name="hobbies" value="Jugueteria">
-                <label>Vida Sana</label>
-                <input type="checkbox" name="hobbies" value="Vida Sana">
+                <h5>Perfil del Usuario</h5>
+                <div class="contenedor-radio">
+                    <label for="Comprador">Comprador</label>
+                    <input type="radio" name="perfil-de-usuario" id="Comprador">
+                    <label for="Comprador">Vendedor</label>
+                    <input type="radio" name="perfil-de-usuario" value="Vendedor">
+                </div>
+                <h5>Intereses</h5>
+                <div class=>
+                    <label for="Electro">Electro</label>
+                    <input type="checkbox" name="hobbies">
+
+                    <label for="Moda">Moda</label>
+                    <input type="checkbox" name="hobbies" value="Moda">
+
+                    <label for="Hogar">Hogar</label>
+                    <input type="checkbox" name="hobbies" value="Hogar">
+
+                    <label for="Jugueteria">Jugueteria</label>
+                    <input type="checkbox" name="hobbies" value="Jugueteria">
+
+                    <label for="Vida Sana">Vida Sana</label>
+                    <input type="checkbox" name="hobbies" value="Vida Sana">
+            
+                </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
-
-        </section>
     </main>
+
     <footer>
         <section>
             <ul type="none">
