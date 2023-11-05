@@ -1,33 +1,18 @@
-:root {
-    --primario: #db0034;
-    --secundario: #eeeeee;
-    --links: #ada9a9;
-    --bg-primario: #424242;
-    --bg-secundario: #101010;
-}
-
-h5{
-    padding: 10px;
-    font: 1em sans-serif;
-}
-
-.header {
-    background-color: #EAC926;
-    margin: 0 auto;
-    max-width: 1920px;
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-around;
-}
-
 
 .logo-mercado-liebre {
     width: 20%;
     padding: 10px;
 }
 
+
+.img__banner {
+    display: none;
+}
+
+
+.nav_bar {
+    display: flex;
+}
 
 .barra_busqueda {
     display: flex;
@@ -52,7 +37,6 @@ h5{
 }
 
 
-
 /* Estilos para la lupa (imagen) */
 .lupa {
     position: absolute;
@@ -69,10 +53,6 @@ h5{
 }
 
 
-.nav_bar {
-    display: flex;
-}
-
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -84,20 +64,6 @@ li {
     margin-right: 10px;
     /* Espacio entre elementos de la lista */
     padding: 10px;
-}
-
-
-
-
-.img__banner {
-    display: none;
-}
-
-
-
-
-.alineacion {
-    text-align: center;
 }
 
 
@@ -114,6 +80,36 @@ li {
 }
 
 
+button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background-color: blue;
+}
+
+
+h5{
+    padding: 10px;
+    font: 1em sans-serif;
+}
+
+
+.header {
+    background-color: #EAC926;
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
+
+.contenedor-checkbox label{
+    display: flex;
+    gap: 10px;
+}
+
+
 input[type="text"] {
     width: 100%;
     margin: 10px;
@@ -123,7 +119,6 @@ input[type="text"] {
     display: flex;
     justify-content: center;
 }
-
 
 
 input[type="email"] {
@@ -148,7 +143,6 @@ input[type="date"] {
 }
 
 
-
 input[type="radio"] {
     display: flex;
 
@@ -164,17 +158,6 @@ input[type="checkbox"] {
 
 }
 
-
-
-button {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 10px;
-    padding: 10px;
-    color: white;
-    background-color: blue;
-}
 
 label {
     margin-right: 10px;

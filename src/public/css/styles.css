@@ -4,19 +4,37 @@
     padding: 0;
 }
 
+:root {
+    --secundario: #eeeeee;
+    --links: #ada9a9;
+    --bg-primario: #424242;
+    --bg-secundario: #101010;
+}
+
 .encabezado{
     display: flex;
+    justify-content: space-around;
 }
 
 .logo-mercado-liebre{
     width: 50%;
 }
 
-.body {
+
+.img__banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: auto;  
+}
+
+
+body {
     background-color: #EAC926;
     margin: 0 auto;
-    max-width: 1920px;
+    /*max-width: 1920px;*/
 }
+
 
 h3 {
     font-size: 24px;
@@ -66,12 +84,7 @@ h4 {
     position: absolute;
     right: 20px;
     top: -15px;
-}
-
-
-.img__banner {
-    width: 90;
-    height: auto;
+    transition: transform 1s;
 }
 
 
@@ -163,6 +176,10 @@ p {
 
 }
 
+.info-productos:hover .icontruck{
+    transform: rotate(-90deg);
+}
+
 
 
 /* Media queries */
@@ -179,9 +196,11 @@ p {
     }
     .img__banner{
         display: flex;
-        height: 100px;
-        width: 350px; 
+       /* height: 100px;
+        width: 350px; */
         justify-content: center;
+        object-fit: cover;
+        margin: auto;
     }
     .encabezado{
         display: flex;
@@ -208,4 +227,47 @@ p {
     }
 
 
+    .foot-conteiner{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .copy{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
+
+
+.articulo:hover .descripcion{
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    opacity: 1;
+}
+
+
+.articulo:hover{
+    box-shadow:  0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.conteiner-infoProduct{
+    transition: all 0.4s ease-in;
+    
+    }
+    
+    .descripcion{
+        /*! position: relative; */
+        bottom: 40px;
+        z-index: -1;
+        opacity: 0;
+        transition: all 0.4s ease-in;
+    }
+    
+    .box-products:hover .conteiner-infoProduct{
+        height: 5em;
+    }
+
+    
